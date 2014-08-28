@@ -1,0 +1,40 @@
+# TallyUp API
+
+API to serve the TallyUp iOS application, written in Go.
+
+## Getting Started
+
+1. Clone the repository.
+1. Install [goop](https://github.com/nitrous-io/goop) if you don't already have it.
+
+    ```bash
+    $ go get go get github.com/nitrous-io/goop
+    ```
+
+1. Install the dependencies using goop.
+
+    ```bash
+    $ goop install
+    ```
+
+1. Create the database.
+
+    ```bash
+    $ createdb tallyup
+    ```
+
+1. Run the migrations
+
+    ```bash
+    $ goop exec goose up
+    ```
+
+1. Run the application
+
+    ```bash
+    $ goop exec go run server.go database.go
+    ```
+
+## Testing
+
+You can run the tests with `goop exec go test`

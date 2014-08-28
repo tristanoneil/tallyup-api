@@ -1,3 +1,4 @@
 bitbucket.org/liamstask/goose/cmd/goose
 github.com/go-martini/martini
-github.com/codegangsta/martini-contrib
+github.com/coopernurse/gorm
+https://github.com/lib/pq

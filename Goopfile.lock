@@ -1,1 +1,3 @@
-github.com/mattes/migrate #5202bf028bed5af1a96af7879377b9d013964f4a
+bitbucket.org/liamstask/goose/cmd/goose #d895b7d4e840c1048395df986ca797bea46bb2c8
+github.com/go-martini/martini #42b0b68fb383aac4f72331d0bd0948001b9be080
+github.com/jinzhu/gorm #922395c965d33f00c7ea19718da2e285a403084d
