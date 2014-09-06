@@ -32,9 +32,9 @@ API to serve the TallyUp iOS application, written in Go.
 1. Run the application
 
     ```bash
-    $ goop exec go run server.go database.go
+    $ goop exec go run main.go
     ```
 
 ## Testing
 
-You can run the tests with `goop exec go test`
+You can run the tests with `goop exec go test ./test/*`

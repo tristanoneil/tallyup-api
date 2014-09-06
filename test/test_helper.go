@@ -1,10 +1,12 @@
-package main
+package test
 
 import (
 	"net/http"
 	"net/http/httptest"
 
 	"github.com/go-martini/martini"
+
+	"../model"
 )
 
 var (
@@ -15,7 +17,7 @@ var (
 // Request simulates a request for a given method, route and handler.
 //
 func Request(method string, route string, handler martini.Handler) {
-	initDatabase()
+	model.InitDatabase()
 	m := martini.Classic()
 	m.Get(route, handler)
 
