@@ -1,14 +1,14 @@
 package main
 
 import (
-	"./model"
+	"./db"
 	"./route"
 
 	"github.com/go-martini/martini"
 )
 
 func main() {
-	model.InitDatabase()
+	db.Init()
 	m := martini.Classic()
 
 	m.Get("/", route.GoalsIndex)

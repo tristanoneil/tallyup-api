@@ -1,4 +1,4 @@
-package model
+package db
 
 import (
 	"log"
@@ -13,10 +13,10 @@ import (
 var Db gorm.DB
 
 //
-// InitDatabase initializes database connection and assigns globally available
+// Init initializes database connection and assigns globally available
 // gorm.DB.
 //
-func InitDatabase() {
+func Init() {
 	var err error
 	Db, err = gorm.Open("postgres", "dbname=tallyup sslmode=disable")
 

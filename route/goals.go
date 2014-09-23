@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"../model"
+	"../db"
 )
 
 //
@@ -14,7 +15,7 @@ import (
 //
 func GoalsIndex() []byte {
 	goals := []model.Goal{}
-	model.Db.Find(&goals)
+	db.Db.Find(&goals)
 	goalsJSON, err := json.Marshal(goals)
 
 	if err != nil {
